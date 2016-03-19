@@ -58,6 +58,28 @@ $(function () {
 
     $('title').text (s[j].text + '鉅臣');
   };
+  window.page3 = function (j) {
+    var $container = $('.container');
+    
+    $('<div />').addClass ('nav').append ($('<div />').append (
+        $('<a />').attr ('href', 'index.html').text ('首頁').add (
+          $('<span />').text ('❯')
+        ).add ($('<a />').addClass ('r').attr ('href', '製造流程.html').text ('製造流程'))
+      )).insertBefore ($container);
+
+    $('title').text ('製造流程' + '鉅臣');
+  };
+  window.page5 = function (j) {
+    var $container = $('.container');
+    
+    $('<div />').addClass ('nav').append ($('<div />').append (
+        $('<a />').attr ('href', 'index.html').text ('首頁').add (
+          $('<span />').text ('❯')
+        ).add ($('<a />').addClass ('r').attr ('href', '經驗技術.html').text ('經驗技術'))
+      )).insertBefore ($container);
+
+    $('title').text ('經驗技術' + '鉅臣');
+  };
 
   var top = [{text: 'Contact us', href: ''}, {text: 'Home', href: ''}];
   var middle = 'img/topbar.jpg';
@@ -76,13 +98,13 @@ $(function () {
       {text: '品管設備<br/>Quality & Measurement', href: '設備軟體_品管設備.html'},
       {text: '其 他<br/>Others', href: '設備軟體_其他.html'},
     ]},
-    {text: '製造流程<br/>Die Manufacture<br/>flow', href: ''},
+    {text: '製造流程<br/>Die Manufacture<br/>flow', href: '製造流程.html'},
     {text: '產品實績<br/>Products', content: [
       {text: '鋁板<br/>Aluminum', href: ''},
       {text: '鐵板<br/>Steel', href: ''},
       {text: '高張力<br/>High strength', href: ''},
     ]},
-    {text: '經驗與技術轉換<br/>Our performance &<br/>Technical change', href: ''},
+    {text: '經驗與技術轉換<br/>Our performance &<br/>Technical change', href: '經驗技術.html'},
     {text: '轉投資公司簡介<br/>Our Investment<br/>Profile', href: ''},
     {text: '主要客戶技術及業務合作<br/>Main Customers&Technical<br/>& business cooperation', href: ''},
   ];
