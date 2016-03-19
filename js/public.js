@@ -62,7 +62,7 @@ $(function () {
     var s = [{text: '鋁板', en: 'Design software', href: '產品實績_鋁板.html'},
              {text: '鐵板', en: 'Machinery', href: '產品實績_鐵板.html'},
              {text: '高張力', en: 'Tryout press', href: '產品實績_高張力.html'}];
-    
+
     var $container = $('.container');
 
     $container.find ('.l').append ($('<div />').html ('產品實績<span>Products</span>'))
@@ -70,7 +70,7 @@ $(function () {
                             return $('<a />').addClass (i == j ? 'a' : null).attr ('href', t.href).html (t.text + '．' + t.en);
                           }))
                           .append ($('<div />'));
-    
+
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
@@ -100,7 +100,7 @@ $(function () {
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
-        ).add ($('<a />').addClass ('r').attr ('href', '經驗技術.html').text ('經驗技術'))
+        ).add ($('<a />').addClass ('r').attr ('href', '經驗技術.html').text ('經驗與技術轉換'))
       )).insertBefore ($container);
 
     $('title').text ('經驗技術' + '鉅臣');
