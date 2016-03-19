@@ -1,0 +1,26 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+@import "_oa";
+html {
+  body {
+    background-color: rgba(36, 36, 37, 1);
+    &:before {
+      display: none;
+    }
+    .main {
+      // @include background-image(linear-gradient(top, rgba(35, 42, 41, 1) 0%, rgba(13, 13, 15, 1) 100%));
+      background-color: rgba(0, 0, 0, 1);
+      
+
+      img {
+        display: inline-block;
+        margin: 0 auto;
+        width: $mainWidth;
+        height: 540px;
+      }
+    }
+  }
+}
