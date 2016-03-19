@@ -43,10 +43,8 @@
     }
     > div {
       margin: 20px;
-      border: 1px solid rgba(255, 0, 0, .3);
       @include split-left(400px);
       > * {
-        border: 1px solid rgba(255, 0, 0, .3);
       }
       .l {
         height: 235px;
@@ -58,7 +56,6 @@
 
         > div {
           padding: 5px;
-          background-color: rgba(0, 0, 255, 0.2);
           position: relative;
           padding-left: 20px;
 
@@ -73,7 +70,7 @@
             background-color: rgba(162, 49, 44, 1);
           }
           + div {
-            border-top: 1px dotted rgba(255, 0, 0, .3);
+            border-top: 1px dotted rgba(134, 0, 0, .2);
           }
         }
       }
