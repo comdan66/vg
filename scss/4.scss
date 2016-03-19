@@ -5,18 +5,18 @@
 
 @import "_oa";
 .boxs {
-  display: none;
   .box {
-    border: 1px solid rgba(255, 0, 0, .3);
-    position: fixed;
-    top: 30px;
-    left: calc((100% - 700px) / 2);
-    display: inline-block;
-    width: 700px;
-    height: 500px;
-    border: 1px solid rgba(255, 0, 0, .3);
+    position: absolute;
+    margin-bottom: 20px;
+    top: 20px;
+    left: calc((100% - 885px + 24px) / 2);
+    width: 885px + 24px;
     z-index: 99999;
     padding-top: 50px;
+    display: none;
+    &.s {
+      display: inline-block;
+    }
 
     .close {
       position: absolute;
@@ -30,7 +30,13 @@
       font-size: 20px;
       line-height: 36px;
       font-weight: bold;
+      cursor: pointer;
       @include border-radius(50%);
+      @include transition(all .3s);
+      
+      &:hover {
+        background-color: rgba(39, 40, 34, .7); 
+      }
     }
     .content {
       background-color: rgba(255, 255, 255, 1);
@@ -39,7 +45,41 @@
       height: 100%;
       padding: 10px;
       @include border-radius(3px);
+      .imgs {
+        position: relative;
+        margin-top: 10px;
+        a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: inline-block;
+          height: 100%;
+          width: 50px;
+          color: rgba(255, 255, 255, 1);
+          text-decoration: none;
+          font-size: 30px;
+          cursor: pointer;
 
+          &:last-child {
+            left: auto;
+            right: 0;
+          }
+          &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle ;
+            height: 100%;
+          }
+        }
+        
+        img {
+          width: 885px;
+          display: none;
+          &:nth-child(2) {
+            display: inline-block;
+          }
+        }
+      }
       .topx {
         @include split-left(250px);
         text-align: left;
@@ -86,17 +126,22 @@
     position: fixed;
     top: 0;
     left: 0;
-    display: inline-block;
+    display: none;
     width: 100%;
     height: 100%;
     z-index: 9999;
     background-color: rgba(39, 40, 34, .7);
+
+    &.s {
+      display: inline-block;
+    }
+
   }
 }
 .r {
   .btns {
+    padding: 10px;
     padding-bottom: 15px;
-    padding-top: 10px;
     border-bottom: 1px dashed rgba(132, 132, 132, .5);
 
 
