@@ -58,6 +58,31 @@ $(function () {
 
     $('title').text (s[j].text + '鉅臣');
   };
+  window.page4 = function (j) {
+    var s = [{text: '鋁板', en: 'Design software', href: '產品實績_鋁板.html'},
+             {text: '鐵板', en: 'Machinery', href: '產品實績_鐵板.html'},
+             {text: '高張力', en: 'Tryout press', href: '產品實績_高張力.html'}];
+    
+    var $container = $('.container');
+
+    $container.find ('.l').append ($('<div />').html ('產品實績<span>Products</span>'))
+                          .append (s.map (function (t, i) {
+                            return $('<a />').addClass (i == j ? 'a' : null).attr ('href', t.href).html (t.text + '．' + t.en);
+                          }))
+                          .append ($('<div />'));
+    
+    $('<div />').addClass ('nav').append ($('<div />').append (
+        $('<a />').attr ('href', 'index.html').text ('首頁').add (
+          $('<span />').text ('❯')
+        ).add ($('<a />').attr ('href', s[0].href).text ('產品實績')).add (
+          $('<span />').text ('❯')
+        ).add (
+          $('<a />').addClass ('r').attr ('href', s[j].href).text (s[j].text)
+        )
+      )).insertBefore ($container);
+
+    $('title').text (s[j].text + '鉅臣');
+  };
   window.page3 = function (j) {
     var $container = $('.container');
     
@@ -111,9 +136,9 @@ $(function () {
     ]},
     {text: '製造流程<br/>Die Manufacture<br/>flow', href: '製造流程.html'},
     {text: '產品實績<br/>Products', content: [
-      {text: '鋁板<br/>Aluminum', href: ''},
-      {text: '鐵板<br/>Steel', href: ''},
-      {text: '高張力<br/>High strength', href: ''},
+      {text: '鋁板<br/>Aluminum', href: '產品實績_鋁板.html'},
+      {text: '鐵板<br/>Steel', href: '產品實績_鐵板.html'},
+      {text: '高張力<br/>High strength', href: '產品實績_高張力.html'},
     ]},
     {text: '經驗與技術轉換<br/>Our performance &<br/>Technical change', href: '經驗技術.html'},
     {text: '轉投資公司簡介<br/>Our Investment<br/>Profile', href: ''},
