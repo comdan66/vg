@@ -105,6 +105,17 @@ $(function () {
 
     $('title').text ('經驗技術' + '鉅臣');
   };
+  window.page6 = function (j) {
+    var $container = $('.container');
+
+    $('<div />').addClass ('nav').append ($('<div />').append (
+        $('<a />').attr ('href', 'index.html').text ('首頁').add (
+          $('<span />').text ('❯')
+        ).add ($('<a />').addClass ('r').attr ('href', '轉投資公司簡介.html').text ('轉投資公司簡介'))
+      )).insertBefore ($container);
+
+    $('title').text ('轉投資公司簡介' + '鉅臣');
+  };
   window.page7 = function (j) {
     var $container = $('.container');
 
@@ -141,7 +152,7 @@ $(function () {
       {text: '高張力<br/>High strength', href: '產品實績_高張力.html'},
     ]},
     {text: '經驗與技術轉換<br/>Our performance &<br/>Technical change', href: '經驗技術.html'},
-    {text: '轉投資公司簡介<br/>Our Investment<br/>Profile', href: ''},
+    {text: '轉投資公司簡介<br/>Our Investment<br/>Profile', href: '轉投資公司簡介.html'},
     {text: '主要客戶技術及業務合作<br/>Main Customers&Technical<br/>& business cooperation', href: '主要客戶群.html'},
   ];
   var footer1 = {
