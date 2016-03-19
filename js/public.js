@@ -58,6 +58,16 @@ $(function () {
 
     $('title').text (s[j].text + '鉅臣');
   };
+  window.page3 = function (j) {
+    
+    $('<div />').addClass ('nav').append ($('<div />').append (
+        $('<a />').attr ('href', 'index.html').text ('首頁').add (
+          $('<span />').text ('❯')
+        ).add ($('<a />').attr ('href', '製造流程.html').text ('製造流程'))
+      )).insertBefore ($container);
+
+    $('title').text (s[j].text + '鉅臣');
+  };
 
   var top = [{text: 'Contact us', href: ''}, {text: 'Home', href: ''}];
   var middle = 'img/topbar.jpg';
@@ -76,7 +86,7 @@ $(function () {
       {text: '品管設備<br/>Quality & Measurement', href: '設備軟體_品管設備.html'},
       {text: '其 他<br/>Others', href: '設備軟體_其他.html'},
     ]},
-    {text: '製造流程<br/>Die Manufacture<br/>flow', href: ''},
+    {text: '製造流程<br/>Die Manufacture<br/>flow', href: '製造流程.html'},
     {text: '產品實績<br/>Products', content: [
       {text: '鋁板<br/>Aluminum', href: ''},
       {text: '鐵板<br/>Steel', href: ''},
