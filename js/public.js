@@ -59,14 +59,15 @@ $(function () {
     $('title').text (s[j].text + '鉅臣');
   };
   window.page3 = function (j) {
+    var $container = $('.container');
     
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
-        ).add ($('<a />').attr ('href', '製造流程.html').text ('製造流程'))
+        ).add ($('<a />').addClass ('r').attr ('href', '製造流程.html').text ('製造流程'))
       )).insertBefore ($container);
 
-    $('title').text (s[j].text + '鉅臣');
+    $('title').text ('製造流程' + '鉅臣');
   };
 
   var top = [{text: 'Contact us', href: ''}, {text: 'Home', href: ''}];
