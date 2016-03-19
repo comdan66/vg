@@ -19,7 +19,7 @@
         window.page1 (4);
 
         $('.list img').click (function () {
-          $('.big img').attr ('src', $(this).data ('src'));
+          $(this).parent ().prev ().find ('img').attr ('src', $(this).data ('src'));
         });
       });
     </script>
