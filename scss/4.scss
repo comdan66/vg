@@ -33,9 +33,9 @@
       cursor: pointer;
       @include border-radius(50%);
       @include transition(all .3s);
-      
+
       &:hover {
-        background-color: rgba(39, 40, 34, .7); 
+        background-color: rgba(39, 40, 34, .7);
       }
     }
     .content {
@@ -71,7 +71,7 @@
             height: 100%;
           }
         }
-        
+
         img {
           width: 885px;
           display: none;
@@ -116,7 +116,7 @@
               &:last-child {
                 background-color: rgba(183, 184, 185, 1);
               }
-            }            
+            }
           }
         }
       }
@@ -146,7 +146,7 @@
 
 
     @include clearfix();
-    
+
     a {
       float: left;
       margin: 5px;
