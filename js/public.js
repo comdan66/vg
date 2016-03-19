@@ -10,7 +10,7 @@ $(function () {
              {text: '公司沿革', en: 'History', href: '企業情報_公司沿革.html'},
              {text: '組織圖', en: 'Organization', href: '企業情報_組織圖.html'},
              {text: '廠區圖', en: 'Die shop Photo', href: '企業情報_廠區圖.html'}];
-    
+
     var $container = $('.container');
 
     $container.find ('.l').append ($('<div />').html ('企業情報<span>Company Info</span>'))
@@ -18,7 +18,7 @@ $(function () {
                             return $('<a />').addClass (i == j ? 'a' : null).attr ('href', t.href).html (t.text + '．' + t.en);
                           }))
                           .append ($('<div />'));
-    
+
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
@@ -37,7 +37,7 @@ $(function () {
              {text: '鉗工設備', en: 'Tryout press', href: '設備軟體_鉗工設備.html'},
              {text: '品管設備', en: 'Quality & Measurement', href: '設備軟體_品管設備.html'},
              {text: '其他', en: 'Others', href: '設備軟體_其他.html'}];
-    
+
     var $container = $('.container');
 
     $container.find ('.l').append ($('<div />').html ('設備 ‧ 軟體<span>Main Manufacture Equipment & Soft</span>'))
@@ -45,7 +45,7 @@ $(function () {
                             return $('<a />').addClass (i == j ? 'a' : null).attr ('href', t.href).html (t.text + '．' + t.en);
                           }))
                           .append ($('<div />'));
-    
+
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
@@ -60,7 +60,7 @@ $(function () {
   };
   window.page3 = function (j) {
     var $container = $('.container');
-    
+
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
@@ -71,7 +71,7 @@ $(function () {
   };
   window.page5 = function (j) {
     var $container = $('.container');
-    
+
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
@@ -82,11 +82,11 @@ $(function () {
   };
   window.page7 = function (j) {
     var $container = $('.container');
-    
+
     $('<div />').addClass ('nav').append ($('<div />').append (
         $('<a />').attr ('href', 'index.html').text ('首頁').add (
           $('<span />').text ('❯')
-        ).add ($('<a />').addClass ('r').attr ('href', '主要客戶群.html').text ('主要客戶群'))
+        ).add ($('<a />').addClass ('r').attr ('href', '主要客戶群.html').text ('主要客戶技術及業務合作'))
       )).insertBefore ($container);
 
     $('title').text ('主要客戶群' + '鉅臣');
@@ -122,7 +122,7 @@ $(function () {
   var footer1 = {
     left: ['VG鉅臣企業股份有限公司', 'Van Guard Mold Enterprise CO, LTD.'],
     right: ['TAX │ NO 86448887       TEL │ +886-7-616-3328     FAX │ +886-7-616-3325', 'Add │ 824 高雄市燕巢區角宿里四林路16之20號', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ No.16-20, Silin Rd. ,Jiaosu Vil., Yanchao  Dist., Kaohsiung City 824, Taiwan (R.O.C.)']};
-  
+
   var footer2 = '© 2016 Van Guard Mold Enterprise CO, LTD. All Rights Reserved ';
 
   $('<div />').addClass ('bottom').append ($('<div />').append (bottom.map (function (t) {
@@ -133,7 +133,7 @@ $(function () {
     else
       return $('<a />').attr ('href', t.href).html (t.text);
   }))).prependTo ('body');
-  
+
   $('<div />').addClass ('middle').append ($('<div />').append ($('<img />').attr ('src', middle))).prependTo ('body');
 
   $('<div />').addClass ('top').append ($('<div />').append (top.map (function (t) {
