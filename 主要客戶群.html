@@ -17,6 +17,13 @@
     <script type="text/javascript">
       $(function () {
         window.page7 ();
+        $('.container a').click (function () {
+          $('.logo').addClass ('s').find ('img').attr ('src', $(this).data ('src'));
+          $('.c').addClass ('s');
+        });
+        $('.c, .logo').click (function () {
+          $('.c, .logo').removeClass ('s');
+        })
       });
     </script>
   </head>
@@ -28,14 +35,21 @@
         </div>
         <span>
           <img src='img/主要客戶群/Bpic_MainMap.jpg'>
-          <a href=''>北美．NORTH AMERICA</a>
-          <a href=''>南美．SOUTH AMERICA</a>
-          <a href=''>歐洲．EUROPE</a>
-          <a href=''>印度．INDIA</a>
-          <a href=''>東南亞地區．SOUTHEAST ASIA</a>
-          <a href=''>中國．CHINA</a>
-          <a href=''>日本．JAPAN</a>
-          <a href=''>台灣．TAIWAN</a>
+          <a data-src='img/主要客戶群/as.png'>北美．NORTH AMERICA</a>
+          <a data-src='img/主要客戶群/ch.png'>南美．SOUTH AMERICA</a>
+          <a data-src='img/主要客戶群/eu.png'>歐洲．EUROPE</a>
+          <a data-src='img/主要客戶群/in.png'>印度．INDIA</a>
+          <a data-src='img/主要客戶群/jp.png'>東南亞地區．SOUTHEAST ASIA</a>
+          <a data-src='img/主要客戶群/tai.png'>中國．CHINA</a>
+          <a data-src='img/主要客戶群/as.png'>日本．JAPAN</a>
+          <a data-src='img/主要客戶群/ch.png'>台灣．TAIWAN</a>
+          
+          <div class='logo'>
+            <img src='' />
+          </div>
+          <div class='c'></div>
+
+          <marquee>這裡放要跑的文字</marquee>
         </span>
     </div></div>
   </body>
