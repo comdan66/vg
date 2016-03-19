@@ -105,6 +105,17 @@ $(function () {
 
     $('title').text ('經驗技術' + '鉅臣');
   };
+  window.pageC = function (j) {
+    var $container = $('.container');
+
+    $('<div />').addClass ('nav').append ($('<div />').append (
+        $('<a />').attr ('href', 'index.html').text ('首頁').add (
+          $('<span />').text ('❯')
+        ).add ($('<a />').addClass ('r').attr ('href', 'contact.html').text ('聯絡我們'))
+      )).insertBefore ($container);
+
+    $('title').text ('聯絡我們' + '鉅臣');
+  };
   window.page6 = function (j) {
     var $container = $('.container');
 
@@ -128,7 +139,7 @@ $(function () {
     $('title').text ('主要客戶群' + '鉅臣');
   };
 
-  var top = [{text: 'Contact us', href: ''}, {text: 'Home', href: ''}];
+  var top = [{text: 'Contact us', href: 'contact.html'}, {text: 'Home', href: 'index.html'}];
   var middle = 'img/topbar.jpg';
   var bottom = [
     {text: '企業情報<br/>Company Info', content: [
