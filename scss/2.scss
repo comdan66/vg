@@ -95,5 +95,28 @@
   .run {
     background-color: rgba(239, 240, 241, 1);
     margin: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    border: 2px solid rgba(216, 217, 218, 1);
+    @include border-radius(2px);
+    
+    div {
+      position: absolute;;
+      top: 0;
+      left: 0;
+      width: 240px * 7;
+      @include clearfix();
+      &.h {
+        @include transition(all .3s);
+      }      
+      
+      img {
+        float: left;
+        display: inline-block;
+        height: 180px;
+        margin: 10px;
+      }
+    }
   }
 }

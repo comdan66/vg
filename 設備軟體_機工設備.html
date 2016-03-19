@@ -17,6 +17,17 @@
     <script type="text/javascript">
       $(function () {
         window.page2 (1);
+
+        $('.run > div').each (function () {
+          var w = $(this).width ();
+          x = setInterval (function () {
+
+            if (parseFloat ($(this).css ('left')) < -w)
+              $(this).removeClass ('h').css ({'left': '730px'});
+            else
+              $(this).addClass ('h').css ({'left': '-=10px'});
+          }.bind ($(this)), 50);
+        });
       });
     </script>
   </head>
@@ -77,7 +88,15 @@
       </table>
 
       <div class='run'>
-        <img src=''>
+        <div>
+          <img src='img/設備軟體/機工設備/機加工設備＿跑馬燈/1001.jpg'>
+          <img src='img/設備軟體/機工設備/機加工設備＿跑馬燈/1002.jpg'>
+          <img src='img/設備軟體/機工設備/機加工設備＿跑馬燈/1003.jpg'>
+          <img src='img/設備軟體/機工設備/機加工設備＿跑馬燈/1004.jpg'>
+          <img src='img/設備軟體/機工設備/機加工設備＿跑馬燈/1005.jpg'>
+          <img src='img/設備軟體/機工設備/機加工設備＿跑馬燈/1006.jpg'>
+          <img src='img/設備軟體/機工設備/機加工設備＿跑馬燈/1007.jpg'>
+        <div>
       </div>
 
     </div></div></div>
