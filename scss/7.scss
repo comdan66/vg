@@ -29,7 +29,7 @@
       @include border-top-left-radius(3px);
       @include border-top-right-radius(3px);
       @include box-shadow(inset 0 0 2px rgba(255, 255, 255, .5));
-      
+
       background-color: rgba(95, 96, 88, 1);
       @include background-image(linear-gradient(top, rgba(95, 96, 88, 1) 0%, rgba(65, 69, 61, 1) 100%));
     }
@@ -49,20 +49,62 @@
       padding: 0 5px;
       @include border-radius(10px);
       @include box-shadow(0 1px 1px rgba(39, 40, 34, .2));
-      
+
       &:nth-child(2) {
         font-size: 13px;
-        top: 112px;
-        left: 130px;
+        top: 150px;
+        left: 77px;
 
         background-color: rgba(0, 97, 255, 1);
       }
       &:nth-child(3) {
         font-size: 13px;
-        top: 212px;
-        left: 130px;
+        top: 335px;
+        left: 183px;
 
-        background-color: rgba(254, 106, 1, 1);
+        background-color: rgba(252, 103, 2, 1);
+      }
+      &:nth-child(4) {
+        font-size: 13px;
+        top: 110px;
+        left: 470px;
+
+        background-color: rgba(2, 157, 147, 1);
+      }
+      &:nth-child(5) {
+        font-size: 13px;
+        top: 200px;
+        left: 650px;
+
+        background-color: rgba(180, 149, 32, 1);
+      }
+      &:nth-child(6) {
+        font-size: 13px;
+        top: 260px;
+        left: 700px;
+
+        background-color: rgba(124, 208, 132, 1);
+      }
+      &:nth-child(7) {
+        font-size: 13px;
+        top: 140px;
+        left: 720px;
+
+        background-color: rgba(161, 4, 4, 1);
+      }
+      &:nth-child(8) {
+        font-size: 13px;
+        top: 160px;
+        left: 890px;
+
+        background-color: rgba(236, 168, 245, 1);
+      }
+      &:nth-child(9) {
+        font-size: 13px;
+        top: 215px;
+        left: 850px;
+
+        background-color: rgba(195, 5, 192, 1);
       }
     }
   }
