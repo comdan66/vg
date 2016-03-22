@@ -151,11 +151,13 @@
       float: left;
       margin: 5px;
       @include a(0, false, rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
-      padding: 5px;
+      padding: 4px 20px;
       background-color: rgba(170, 171, 172, 1);
-      @include border-radius(3px);
+      @include border-radius(40px);
       cursor: pointer;
       width: 170px;
+      font-size: 13px;
+      height: 60px;
     }
   }
 
@@ -188,7 +190,7 @@
         }
       }
       td {
-        word-wrap: break-word; 
+        word-wrap: break-word;
         word-break: break-all;
         padding: 10px;
         &.x {padding: 0;}
