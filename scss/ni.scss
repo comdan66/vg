@@ -1,0 +1,76 @@
+
+body {
+  font-family: 'icomoon', Monaco, "微軟正黑體", "Microsoft JhengHei";
+  background-color:rgba(0, 0, 0, 1);
+  margin: 0;
+
+  #mainbox {
+    width: 100%;
+    border: 1px solid rgba(255, 0, 0, .3);
+
+    //自適應高度
+    *zoom: 1;
+
+      :after {
+       display: table;
+       content: "";
+       line-height: 0;
+       clear: both;
+      }
+
+      .tbar {
+        width: 100%;
+        background-color:rgba(57, 58, 59, 1);
+
+        .tc{
+          margin: 0 auto;
+          width: 1000px;
+          height: 30px;
+        }
+      }
+
+      .lbar {
+        width: 100%;
+        background-color:rgba(141, 0, 0, 1);
+
+        .lc{
+          margin: 0 auto;
+          width: 1000px;
+          height: 60px;
+        }
+      }
+
+      .cb {
+        margin: 0 auto;
+        width: 1000px;
+        height: 560px;
+        background-color:rgba(0, 0, 0, 1);
+      }
+
+      .ftbar {
+        width: 100%;
+        background-color: rgba(58, 59, 60, 1);
+
+        .fc{
+          margin: 0 auto;
+          width: 1000px;
+          height: 80px;
+        }
+      }
+
+      .cobar {
+        width: 100%;
+        background-color: rgba(0, 23, 39, 1);
+
+        .cc{
+          margin: 0 auto;
+          width: 1000px;
+          height: 20px;
+        }
+      }
+
+
+
+  }
+
+}
