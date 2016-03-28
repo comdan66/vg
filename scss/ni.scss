@@ -11,7 +11,7 @@ body {
     //自適應高度
     *zoom: 1;
 
-      :after {
+      &:after {
        display: table;
        content: "";
        line-height: 0;
