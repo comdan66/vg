@@ -59,9 +59,9 @@ $(function () {
     $('title').text (s[j].text + '鉅臣');
   };
   window.page4 = function (j) {
-    var s = [{text: '鋁板', en: 'Design software', href: '產品實績_鋁板.html'},
-             {text: '鐵板', en: 'Machinery', href: '產品實績_鐵板.html'},
-             {text: '高張力', en: 'Tryout press', href: '產品實績_高張力.html'}];
+    var s = [{text: '鋁板', en: 'Aluminum', href: '產品實績_鋁板.html'},
+             {text: '鐵板', en: 'Steel', href: '產品實績_鐵板.html'},
+             {text: '高張力', en: 'High Strength', href: '產品實績_高張力.html'}];
 
     var $container = $('.container');
 
@@ -168,7 +168,7 @@ $(function () {
   ];
   var footer1 = {
     left: ['VG鉅臣企業股份有限公司', 'Van Guard Mold Enterprise CO, LTD.'],
-    right: ['TAX │ NO 86448887       TEL │ +886-7-616-3328     FAX │ +886-7-616-3325', 'Add │ 824 高雄市燕巢區角宿里四林路16之20號', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ No.16-20, Silin Rd. ,Jiaosu Vil., Yanchao  Dist., Kaohsiung City 824, Taiwan (R.O.C.)']};
+    right: ['TAX &nbsp;&nbsp;NO：86448887 &nbsp;&nbsp;&nbsp;&nbsp;TEL：+886-7-616-3328&nbsp;&nbsp;&nbsp;&nbsp;FAX：+886-7-616-3325', 'Add：824 高雄市燕巢區角宿里四林路16之20號', '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No.16-20, Silin Rd. ,Jiaosu Vil., Yanchao  Dist., Kaohsiung City 824, Taiwan (R.O.C.)']};
 
   var footer2 = '© 2016 Van Guard Mold Enterprise CO, LTD. All Rights Reserved ';
 

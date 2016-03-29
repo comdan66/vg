@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tw">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title></title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" rel="stylesheet" type="text/css" />
+    <link href="css/frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/frame2.css" rel="stylesheet" type="text/css" />
+    <link href="css/1.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/public.js" language="javascript" type="text/javascript" ></script>
+
+    <script type="text/javascript">
+      $(function () {
+        window.page1 (4);
+
+        $('.list img').click (function () {
+          $(this).parent ().prev ().find ('img').attr ('src', $(this).data ('src'));
+        });
+      });
+    </script>
+  </head>
+
+  <body lang="zh-tw">
+    <div class='container'><div><div class='l'></div><div class='r'>
+      <img src='img/a02/topCompany.jpg'/>
+
+      <span title='機加工區．Machining area'></span>
+      <div class='big'>
+        <img src="img/a02/aa02/aaa01/B7001.jpg">
+      </div>
+      <div class='list'>
+        <img src="img/a02/aa02/aaa01/S7001.jpg" data-src='img/a02/aa02/aaa01/B7001.jpg'>
+        <img src="img/a02/aa02/aaa01/S7002.jpg" data-src='img/a02/aa02/aaa01/B7002.jpg'>
+      </div>
+
+      <span title='鉗工試模區．Bench & Tryout & QC Area'></span>
+      <div class='big'>
+        <img src="img/a02/aa02/aaa02/B8001.jpg">
+      </div>
+      <div class='list'>
+        <img src="img/a02/aa02/aaa02/B8001.jpg" data-src='img/a02/aa02/aaa02/B8001.jpg'>
+        <img src="img/a02/aa02/aaa02/B8002.jpg" data-src='img/a02/aa02/aaa02/B8002.jpg'>
+        <img src="img/a02/aa02/aaa02/B8003.jpg" data-src='img/a02/aa02/aaa02/B8003.jpg'>
+        <img src="img/a02/aa02/aaa02/B8004.jpg" data-src='img/a02/aa02/aaa02/B8004.jpg'>
+      </div>
+    </div></div></div>
+  </body>
+</html>

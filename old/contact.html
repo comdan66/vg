@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tw">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title></title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" rel="stylesheet" type="text/css" />
+    <link href="css/frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/frame3.css" rel="stylesheet" type="text/css" />
+    <link href="css/contact.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&language=zh-TW" language="javascript" type="text/javascript"></script>
+    <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/public.js" language="javascript" type="text/javascript" ></script>
+
+    <script type="text/javascript">
+      $(function () {
+        function initialize () {
+          var p = new google.maps.LatLng (22.7810587, 120.3258648);
+          var _map = new google.maps.Map ($('#map').get (0), { zoom: 14, zoomControl: true, scrollwheel: true, scaleControl: true, mapTypeControl: false, navigationControl: true, streetViewControl: false, disableDoubleClickZoom: true, center: p});
+          new google.maps.Marker ({
+            map: _map,
+            draggable: true,
+            position: p
+          });
+        }
+        google.maps.event.addDomListener (window, 'load', initialize);
+
+        window.pageC ();
+      });
+    </script>
+  </head>
+  <body lang="zh-tw">
+    <div class='container'><div>
+        <div class='tx'>
+          聯絡我們
+          <span>Contact Us</span>
+        </div>
+        <span>
+          <img src='img/a06/topCU.jpg'>
+          <div>
+            <div class='l' id='map'></div>
+            <div class='r'>
+              <div><b>Add: </b>824高雄市燕巢區四林路16之20號
+              No.16-20, Silin Rd., Yanchao Dist., Kaohsiung City 824, Taiwan (R.O.C.)
+              </div>
+              <div><b>Tel:</b>+886-7-6163328</div>
+              <div><b>Fax:</b>+886-7-6163325</div>
+              <div><b>Web: </b>http://www.vgmold.com.tw</div>
+              <div><b>Email: </b><a href='mailto:ale@vgmold.com.tw'>sale@vgmold.com.tw</a></div>
+            </div>
+          </div>
+        </span>
+    </div></div>
+  </body>
+</html>

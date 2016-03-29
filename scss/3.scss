@@ -8,7 +8,7 @@
   .tx {
     text-align: left;
     border-bottom: 4px solid rgba(234, 2, 0, 1);
-    padding: 5px;
+    padding: 5px 0 4px 10px;
     color: rgba(255, 255, 255, 1);
     position: relative;
 
@@ -29,7 +29,7 @@
       @include border-top-left-radius(3px);
       @include border-top-right-radius(3px);
       @include box-shadow(inset 0 0 2px rgba(255, 255, 255, .5));
-      
+
       background-color: rgba(95, 96, 88, 1);
       @include background-image(linear-gradient(top, rgba(95, 96, 88, 1) 0%, rgba(65, 69, 61, 1) 100%));
     }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tw">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title></title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" rel="stylesheet" type="text/css" />
+    <link href="css/frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/frame2.css" rel="stylesheet" type="text/css" />
+    <link href="css/2.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/public.js" language="javascript" type="text/javascript" ></script>
+
+    <script type="text/javascript">
+      $(function () {
+        window.page2 (1);
+
+        $('.run > div').each (function () {
+          var w = $(this).width ();
+          x = setInterval (function () {
+
+            if (parseFloat ($(this).css ('left')) < -w)
+              $(this).removeClass ('h').css ({'left': '730px'});
+            else
+              $(this).addClass ('h').css ({'left': '-=10px'});
+          }.bind ($(this)), 50);
+        });
+      });
+    </script>
+  </head>
+  <body lang="zh-tw">
+    <div class='container'><div><div class='l'></div><div class='r'>
+      <img src='img/a08/o03/topMachinery.jpg'/>
+
+      <div class='t'>機加工設備．Machinery</div>
+
+
+      <table>
+        <thead>
+          <tr><th>設備名<br/>Name</th>
+              <th>規格<br/>SPEC (mm)</th>
+              <th>廠牌<br/>Maker</th>
+              <th>台數<br/>Q'ty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CNC AA1880</td>
+            <td>FANUC 18iMB 1800x800x1100</td>
+            <td>WELE</td>
+            <td>1</td>
+          </tr>
+          <tr class='b'>
+            <td>CNC LP4021</td>
+            <td>FANUC OiMD 4000x2100x760</td>
+            <td>AWEA</td>
+            <td>1</td>
+          </tr>
+
+          <tr>
+            <td>CNC LP4025</td>
+            <td>5A Universal head FANUC 18MC 4000x3200x1000</td>
+            <td>AWEA</td>
+            <td>1</td>
+          </tr>
+          <tr class='b'>
+            <td>CNC LB432Z</td>
+            <td>5A Universal head FANUC 31iMB 4060x3200x400-1400</td>
+            <td>WELE</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>CNC LG5030</td>
+            <td>FANUC 18iMB 5000x3000x1000</td>
+            <td>AWEA</td>
+            <td>1</td>
+          </tr>
+          <tr class='b'>
+            <td>CNC MG530</td>
+            <td>5A Universal head FANUC 31iMB 5000x3000x400-1400</td>
+            <td>WELE</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='run'>
+        <div>
+          <img src='img/a08/o03/oo03/1001.jpg'>
+          <img src='img/a08/o03/oo03/1002.jpg'>
+          <img src='img/a08/o03/oo03/1003.jpg'>
+          <img src='img/a08/o03/oo03/1004.jpg'>
+          <img src='img/a08/o03/oo03/1005.jpg'>
+          <img src='img/a08/o03/oo03/1006.jpg'>
+          <img src='img/a08/o03/oo03/1007.jpg'>
+        <div>
+      </div>
+
+    </div></div></div>
+  </body>
+</html>

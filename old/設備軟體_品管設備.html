@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tw">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title></title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" rel="stylesheet" type="text/css" />
+    <link href="css/frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/frame2.css" rel="stylesheet" type="text/css" />
+    <link href="css/2.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
+    <script src="js/public.js" language="javascript" type="text/javascript" ></script>
+
+    <script type="text/javascript">
+      $(function () {
+        window.page2 (3);
+
+        $('.run > div').each (function () {
+          var w = $(this).width ();
+          x = setInterval (function () {
+
+            if (parseFloat ($(this).css ('left')) < -w)
+              $(this).removeClass ('h').css ({'left': '730px'});
+            else
+              $(this).addClass ('h').css ({'left': '-=10px'});
+          }.bind ($(this)), 50);
+        });
+      });
+    </script>
+  </head>
+  <body lang="zh-tw">
+    <div class='container'><div><div class='l'></div><div class='r'>
+      <img src='img/a08/o02/topQusility.jpg'/>
+
+      <div class='t'>品管量測設備．Quality & Measurement Machine </div>
+
+
+      <table>
+        <thead>
+          <tr><th>設備名<br/>Name</th>
+              <th>規格<br/>SPEC (mm)</th>
+              <th>廠牌<br/>Maker</th>
+              <th>台數<br/>Q'ty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CMM測定器機</td>
+            <td>5000x2500x1800MCT NT 50-25-18DR</td>
+            <td>COORD3</td>
+            <td>1</td>
+          </tr>
+          <tr class='b'>
+            <td>Compact Scan/GOM Inspect 藍光掃描</td>
+            <td>5M Digitizing System</td>
+            <td>ATOS</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Portable Ultrasonic Thickness Gauges Tester攜帶式精密型超音波測厚計</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class='b'>
+            <td>Portable Hardness Tester攜帶式硬度計</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Portable surface Roughness Tester 攜帶式表面粗度測定機</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='run'>
+        <div>
+          <img src='img/a08/o02/oo01/1201.jpg'>
+          <img src='img/a08/o02/oo01/1202.jpg'>
+          <img src='img/a08/o02/oo01/1203.jpg'>
+        <div>
+      </div>
+
+    </div></div></div>
+  </body>
+</html>

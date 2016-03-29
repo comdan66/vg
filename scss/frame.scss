@@ -82,12 +82,12 @@ html {
 .top > div {
   text-align: right;
   @include clearfix();
-  
+
   a {
     @include a(0, false, rgba(255, 255, 255, .5), rgba(255, 255, 255, .8));
     float: right;
     font-size: 13px;
-    
+
     + a {
       margin-right: 10px;
     }
@@ -157,7 +157,7 @@ html {
       }
       &:nth-child(1) {
         border-left: 1px solid rgba(100, 6, 2, .5);
-        padding-top: 10px + 5px;
+        padding-top: 2px + 5px;
 
         &:before {
           content: '';
@@ -177,7 +177,7 @@ html {
         padding-top: 2px + 5px;
       }
       &:nth-child(4) {
-        padding-top: 8px + 5px;
+        padding-top: 2px + 5px;
       }
       &:last-child {
         width: 190px;
@@ -188,7 +188,7 @@ html {
 .nav > div {
   text-align: left;
   @include clearfix();
-  
+
   > * {
     float: left;
     display: inline-block;

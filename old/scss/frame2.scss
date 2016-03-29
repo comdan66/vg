@@ -1,0 +1,67 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+
+@import "_oa";
+
+.container > div {
+  margin-bottom: 30px;
+  @include split-left(230px);
+
+  > * {
+    text-align: left;
+  }
+  .l {
+    overflow: hidden;
+    @include border-radius(3px);
+    
+    div, a {
+      display: block;
+      width: 100%;
+      font-size: 13px;
+      margin: 0;
+    }
+    a {
+      @include a(0, false, rgba(255, 255, 255, .8), rgba(255, 255, 255, 1));
+      @include background-image(linear-gradient(top, rgba(220, 67, 16, 1) 0%, rgba(192, 48, 3, 1) 100%));
+      padding: 10px;
+      font-weight: bold;
+      @include box-shadow(inset 0 1px 1px rgba(39, 40, 34, .2));
+      
+      &:hover {
+        @include background-image(linear-gradient(top, rgba(250, 67, 16, 1) 0%, rgba(202, 48, 3, 1) 100%));
+      }
+      &.a {
+        color: rgba(36, 36, 37, 1);
+      }
+    }
+    div {
+      font-weight: bold;
+      font-size: 18px;
+      padding: 5px 10px;
+      color: rgba(255, 255, 255, 1);
+      @include background-image(linear-gradient(top, rgba(120, 120, 120, 1) 0%, rgba(70, 70, 70, 1) 100%));
+      border: 1px solid rgba(70, 70, 70, .5);
+      border-bottom: 0;
+      @include box-shadow(inset 0 1px 1px rgba(255, 255, 255, .5));
+      
+      &:last-child {
+        padding: 4px;
+      }
+      span {
+        font-size: 13px;
+        font-weight: normal;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  .r {
+    width: calc(100% - 230px - 10px);
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    @include border-radius(3px);
+    
+  }
+}
