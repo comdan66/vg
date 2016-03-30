@@ -18,16 +18,9 @@
       $(function () {
         window.page2 (3);
 
-        $('.run > div').each (function () {
-          var w = $(this).width ();
-          x = setInterval (function () {
-
-            if (parseFloat ($(this).css ('left')) < -w)
-              $(this).removeClass ('h').css ({'left': '730px'});
-            else
-              $(this).addClass ('h').css ({'left': '-=10px'});
-          }.bind ($(this)), 50);
-        });
+        $('.pics > div img').click (function () {
+          $(this).parent ().prev ().attr ('src', $(this).data ('src'));
+        }).eq (0).click ();
       });
     </script>
   </head>
@@ -42,6 +35,17 @@
         <span>
           <img src='img/topQuality.jpg' />
 
+          <div class='pics'>
+            <img src="img/a0221/SAA1880.jpg"/>
+
+            <div>
+              <img src="img/a0221/SAA1880.jpg" data-src='img/a0221/BLG5030.jpg'/>
+              <img src="img/a0221/SAA1880.jpg" data-src='img/a0221/BLP4021.jpg'/>
+              <img src="img/a0221/SAA1880.jpg" data-src='img/a0221/BLG5030.jpg'/>
+              <img src="img/a0221/SAA1880.jpg" data-src='img/a0221/BLG5030.jpg'/>
+              <img src="img/a0221/SAA1880.jpg" data-src='img/a0221/BLG5030.jpg'/>
+            </div>
+          </div>
         <table>
         <thead>
           <tr><th style='width:40%;'>設備名<br/>Name</th>

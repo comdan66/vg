@@ -140,7 +140,13 @@ $(function () {
   };
 
   var top = [{text: 'Contact us', href: 'contact.html'}, {text: 'Home', href: 'index.html'}];
-  var middle = 'img/topbar.jpg';
+  var middle = [
+    'img/banner/banner01.jpg',
+    'img/banner/banner02.jpg',
+    'img/banner/banner03.jpg',
+    'img/banner/banner04.jpg',
+  ];
+  var logo = 'img/logo.jpg';
   var bottom = [
     {text: '企業情報<br/>Company Info', content: [
       {text: '位置圖<br/>Locations', href: '企業情報_位置圖.html'},
@@ -181,7 +187,16 @@ $(function () {
       return $('<a />').attr ('href', t.href).html (t.text);
   }))).prependTo ('body');
 
-  $('<div />').addClass ('middle').append ($('<div />').append ($('<img />').attr ('src', middle))).prependTo ('body');
+  
+  $('<div />').addClass ('middle').append ($('<div />').append ($('<div />').addClass ('l').append ($('<img />').attr ('src', logo))).append ($('<div/>').addClass ('r').append (middle.map (function (d) {
+    return $('<img />').attr ('src', d);
+  })))).prependTo ('body');
+  
+  var i = 0;
+  setInterval (function () {
+    var $a = $('.middle .r img');
+    $a.hide ().eq (i = (i + 1) % $a.length).fadeIn (1000);
+  }, 1000);
 
   $('<div />').addClass ('top').append ($('<div />').append (top.map (function (t) {
     return $('<a />').attr ('href', t.href).text (t.text);

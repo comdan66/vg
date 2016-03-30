@@ -135,3 +135,26 @@
 
 
 }
+
+.pics {
+  @include clearfix();
+  
+
+  > img {
+    float: left;
+    width: 600px;
+    margin: 10px;
+  }
+  >div {
+    float: left;
+    @include clearfix();
+    width: calc(100% - 600px - 20px);
+    
+    img {
+      float: left;
+      width: 145px;
+      margin: 20px;
+      margin-top: 10px;
+    }
+  }
+}
