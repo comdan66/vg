@@ -111,15 +111,33 @@
           margin: 10px;
           border: 1px solid rgba(70, 70, 70, .4);
           border-collapse: collapse;
-          margin-top: 80px;
+          margin-top: 20px;
+
+          thead {
+            th {
+              width: 33%;
+              background-color: rgba(70, 70, 70, 1);
+              color: rgba(255, 255, 255, 1);
+              padding: 10px;
+              border: 1px solid rgba(220, 220, 220, 1);
+
+              &:first-child{
+                border-left:none;
+              }
+              &:last-child {
+                border-right: none;
+              }
+            }
+          }
 
           tbody {
             tr {
-              &:first-child {
-                td {
-                  border-top: 3px solid rgba(69, 70, 71, 1);
-                }
-              }
+              border-bottom: 1px solid RGBA(221, 221, 221, 1);
+              // &:first-child {
+              //   td {
+              //     border-top: 3px solid rgba(69, 70, 71, 1);
+              //   }
+              // }
               &:last-child {
                 td {
                   border-bottom: 3px solid rgba(69, 70, 71, 1);
@@ -131,8 +149,8 @@
             }
             td {
               padding: 10px;
-        word-wrap: break-word;
-        word-break: break-all;
+              word-wrap: break-word;
+              word-break: break-all;
               &.x {padding: 0;}
               border-left: 1px solid rgba(70, 70, 70, .2);
               &:first-child {
