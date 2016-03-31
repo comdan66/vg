@@ -95,11 +95,16 @@ html {
 }
 .middle > div {
   text-align: left;
-  @include clearfix();
+  height: 75px;
+  @include split-left(195);
 
-  img {
-    float: left;
-    height: 75px;
+  .r {
+    img {
+      width: 100%;
+      &:not(:first-child) {
+        display: none;
+      }
+    }
   }
 }
 .bottom {
