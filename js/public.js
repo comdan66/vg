@@ -187,16 +187,16 @@ $(function () {
       return $('<a />').attr ('href', t.href).html (t.text);
   }))).prependTo ('body');
 
-  
+
   $('<div />').addClass ('middle').append ($('<div />').append ($('<div />').addClass ('l').append ($('<img />').attr ('src', logo))).append ($('<div/>').addClass ('r').append (middle.map (function (d) {
     return $('<img />').attr ('src', d);
   })))).prependTo ('body');
-  
+
   var i = 0;
   setInterval (function () {
     var $a = $('.middle .r img');
     $a.hide ().eq (i = (i + 1) % $a.length).fadeIn (1000);
-  }, 1000);
+  }, 2000);
 
   $('<div />').addClass ('top').append ($('<div />').append (top.map (function (t) {
     return $('<a />').attr ('href', t.href).text (t.text);

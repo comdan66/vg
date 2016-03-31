@@ -13,13 +13,13 @@ html {
     .main {
       // @include background-image(linear-gradient(top, rgba(35, 42, 41, 1) 0%, rgba(13, 13, 15, 1) 100%));
       background-color: rgba(0, 0, 0, 1);
-      
+
 
       img {
         display: inline-block;
         margin: 0 auto;
         width: $mainWidth;
-        height: 540px;
+        height: 714px;
       }
     }
   }

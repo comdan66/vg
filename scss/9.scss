@@ -37,7 +37,7 @@
   .btns {
     @include clearfix();
     padding: 10px;
-    
+
     a {
       @include a(0, false, rgba(255, 255, 255, .8), rgba(255, 255, 255, 1));
       @include background-image(linear-gradient(top, rgba(120, 120, 120, 1) 0%, rgba(70, 70, 70, 1) 100%));
@@ -45,7 +45,7 @@
       font-weight: bold;
       @include box-shadow(inset 0 1px 1px rgba(39, 40, 34, .2));
       @include border-radius(3px);
-      
+
       &.a, &:hover {
         @include background-image(linear-gradient(top, rgba(220, 67, 16, 1) 0%, rgba(192, 48, 3, 1) 100%));
       }
@@ -54,7 +54,7 @@
   .imgs {
     padding:  0 20px;
     @include clearfix();
-    
+
     img {
       float: left;
       margin: 10px;
@@ -91,7 +91,7 @@
         margin: 10px;
         margin-bottom: 0;
         span {
-          padding: 0 5px;
+          padding: 4px 10px;
           font-size: 13px;
 
           background-color:   rgba(67, 68, 69, 1);
